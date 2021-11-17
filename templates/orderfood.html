@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='orderfood.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderFood</title>
+</head>
+<body>
+<div class = 'container'>
+            <div class = 'header'>
+                <ul type = 'none'>
+                        <a href="/"><li><button id = 'head' type = 'submit' >Help For You</button></li></a>
+                </ul>
+            </div>
+            <form  method="post">
+            <div class = 'enter'>
+            <p id = 'enter' >Name*:  <input id = 'box' type = 'text' name = 'name'></p>
+            <p id = 'enter'>Address*:  <input id = 'box' type = 'text' name = 'address'></p>
+            <p id = 'enter' >Pincode*:  <input id = 'box' type = 'text' name = 'pin'></p>
+            <p id = 'enter'>Number of patients*:  <input id = 'box' type = 'text' name = 'quantity'></p>
+            <p id = 'enter'>Phone Number*:  <input id = 'box' type = 'text' name = 'number'></p>
+            <p id = 'enter'>Alternate number:  <input id = 'box' type = 'text' name = 'BUnumber'></p>
+            </div>
+            <div class = 'choice'>
+{#                <p id = 'combo'>#}
+{#                Vegetarian:  <input type = 'radio' name = 'option' value = 'veg'>#}
+{#                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#}
+{#                Non-vegetarian:  <input type = 'radio' name = 'option' value = 'nonveg'>#}
+{#                </p>#}
+{#                <p id="combo">#}
+{#                    <br><br>#}
+{#                    Rice Combo: <input type="radio" id="combo" name="combo" value="rice">#}
+{#                    Roti Combo: <input type="radio" id="combo" name="combo" value="roti">#}
+{#                    Salad Combo: <input type="radio" id="combo" name="combo" value="salad">#}
+{#                </p>#}
+            </div>
+            <div class = 'entry'>
+                <p id = 'enter' >Specifications*:  <input id = 'box' type = 'text' name = 'suggestions'></p>
+
+            </div>
+
+            <div class = 'but' align="center">
+            <br><br>
+                <button id = 'submit' type = 'submit' name = 'opt' value = 'submit'>Submit</button>
+            </div>
+            </form>
+
+</div>
+</body>
+</html>

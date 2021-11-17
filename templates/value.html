@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='value.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volunteer</title>
+</head>
+<body>
+<div class = 'container'>
+            <div class = 'header'>
+                <ul type = 'none'>
+                    <br><br>
+                    <a href="/"><li><button id = 'head' type = 'submit' >Help For You</button></li></a>
+                <br>
+                </ul>
+            </div>
+        <font color="black" size="40px">
+            <h4 align="center"> Your Patients:-</h4>
+            <br></font>
+    {% for name in patients %}
+        <font color="black"><h2 align="center">
+<li><span class="textlist"></span><input type="hidden" name="handles[]" value="{{ name }}"/>{{ name }}</li>
+        </h2>
+        </font>
+{% endfor %}
+        <div class = 'but'>
+        <form method="post">
+                <br><br><br><br><br><br>
+                <button id = 'submit' type = 'submit' name = 'opt' value = 'accept'>Accept Orders</button>
+        </form>
+            <form method="post">
+                <br><br>
+                <button id = 'submit' type = 'submit' name = 'opt' value = 'unavailable'>I'm Unavailable</button>
+            </form>
+        </div>
+        </div>
+</div>
+</body>
+</html>
